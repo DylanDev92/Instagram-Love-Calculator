@@ -32,7 +32,7 @@ function UserCard(props) {
     return (
       <div className="userCardAdd">
         <div className="container" onClick={(e) => setShowPrompt(!showPrompt)}>
-          <img src="./src/assets/cross.svg" alt="" />
+          <img src="./public/cross.svg" alt="" />
         </div>
         <SearchUser
           display={showPrompt}

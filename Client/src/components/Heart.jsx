@@ -52,8 +52,8 @@ function Heart(props) {
           <img
             src={
               props.enable === true && props.enable2 === true
-                ? "./src/assets/heart.svg"
-                : "./src/assets/heartWhite.svg"
+                ? "./public/heart.svg"
+                : "./public/heartWhite.svg"
             }
             alt=""
           />
