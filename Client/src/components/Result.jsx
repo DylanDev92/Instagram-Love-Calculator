@@ -6,7 +6,7 @@ function Result(props) {
   const minus25 = "A relationship is very much possible if the two of you really want it and are willing to make some sacrifices for it, although the chance of it happening is not very high. It will require a lot of quality time spent together. No matter how much time you spend to it, this relationship might not end up being anything at all.";
   const minus50 = "A relationship has a decent chance of success, but on the other hand, it might not. Both happy and sad times could happen in your relationship. Don't be afraid to discuss any issues with the person. Spend time with one another and communicate.";
   const minus75 = "There is a very good chance that a relationship will succeed, but that doesn't mean you shouldn't improve things on it. Keep in mind that every relationship requires communication, time spent together, and other such things.";
-  const minus95 = "The chances that this relationship will succeed is extremely high because the two of you were meant to be together. A healthy relationship needs clear communication, so keep that in mind. And continue spending time together!ST5";
+  const minus95 = "The chances that this relationship will succeed is extremely high because the two of you were meant to be together. A healthy relationship needs clear communication, so keep that in mind. And continue spending time together!";
   const more95 = "I won't believe in love anymore if this relationship doesn't work. You two are the ideal couple, life intended you to be together!";
 
   useEffect(() => {
