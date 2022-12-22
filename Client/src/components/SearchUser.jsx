@@ -4,7 +4,9 @@ function SearchUser(props) {
   const [search, setSearch] = useState("");
 
   async function getUser() {
-    const getFetch = await fetch("http://localhost:3000/getInfo/" + search);
+    const getFetch = await fetch(
+      "https://instagramlovecalculator.onrender.com/getInfo/" + search
+    );
 
     if (getFetch.status != "404") {
       const json = await getFetch.json();
@@ -15,7 +17,7 @@ function SearchUser(props) {
       props.setFoundOut(true);
       props.setDisplay(false);
     } else {
-      setSearch('Not found :c');
+      setSearch("Not found :c");
     }
   }
 
@@ -26,7 +28,23 @@ function SearchUser(props) {
     >
       <div className="searchContainer">
         <div className="inside">
-          <h2>Search user</h2>
+          <div
+            className="head"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              margin: "0em 0.5em",
+            }}
+          >
+            <h2 style={{ width: "100%" }}>Search user</h2>
+            <h2
+              onClick={(e) => {
+                props.setDisplay(false);
+              }}
+            >
+              X
+            </h2>
+          </div>
           <input
             id="inputUser"
             type="text"

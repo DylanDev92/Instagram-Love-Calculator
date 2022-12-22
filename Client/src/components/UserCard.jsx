@@ -14,7 +14,7 @@ function UserCard(props) {
         setfoundUser(false)
         props.setFound(false)}}>
         <div className="pfp">
-          <img src={"http://localhost:3000/proxy?url=" + user.picture} alt="" />
+          <img src={"https://instagramlovecalculator.onrender.com/proxy?url=" + user.picture} alt="" />
         </div>
         <div className="pInfo">
           <h4>{"@" + user.username}</h4>
