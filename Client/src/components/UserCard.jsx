@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SearchUser from "./SearchUser";
+import cross from '../assets/cross.svg'
 
 function UserCard(props) {
   const [showPrompt, setShowPrompt] = useState(false);
@@ -32,7 +33,7 @@ function UserCard(props) {
     return (
       <div className="userCardAdd">
         <div className="container" onClick={(e) => setShowPrompt(!showPrompt)}>
-          <img src="./public/cross.svg" alt="" />
+          <img src={cross} alt="" />
         </div>
         <SearchUser
           display={showPrompt}

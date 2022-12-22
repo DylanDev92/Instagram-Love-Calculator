@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import heartWhite from '../assets/heartWhite.svg';
+import heart from '../assets/heart.svg';
 
 function Heart(props) {
   const [show, setShow] = useState(false);
@@ -52,8 +54,8 @@ function Heart(props) {
           <img
             src={
               props.enable === true && props.enable2 === true
-                ? "./public/heart.svg"
-                : "./public/heartWhite.svg"
+                ? heart
+                : heartWhite
             }
             alt=""
           />
