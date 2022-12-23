@@ -37,4 +37,4 @@ app.get("/getInfo/:user", async (req, res) => {
 const proxy = require('pass-cors')
 app.use('/proxy', proxy);  //You can customise the route name
 
-client.login("iglovecalculator", "19791101qwerty");
+client.login(process.env.USERNAME, process.env.PASSWORD);
